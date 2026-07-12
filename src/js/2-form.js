@@ -34,6 +34,8 @@ const restoreFromStorage = () => {
   }
 };
 
+restoreFromStorage();
+
 form.addEventListener('input', event => {
   const { name, value } = event.target;
 
@@ -57,5 +59,3 @@ form.addEventListener('submit', event => {
   formData.message = '';
   form.reset();
 });
-
-restoreFromStorage();
